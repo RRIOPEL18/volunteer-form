@@ -64,7 +64,43 @@
           </div>
         </fieldset>
 
+        <fieldset>
+          <legend>Address</legend>
 
+          <div>
+            <label for="address">Street address</label>
+            <input id="address" name="address" required>
+          </div>
+
+          <div>
+          <label for="city">City</label>
+          <input id="city" name="city" required>
+        </div>
+
+        <div>
+          <label for="province">Province</label>
+          <input id="province" list="province-list" required>
+          <datalist id="province-list">
+            <option value="British Columbia">British Columbia</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Québec">Québec</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Newfoundland">Newfoundland</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="Yukon">Yukon</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nunavut">Nunavut</option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="postal code">Postal code</label>
+          <input id="postal code" name="postal code" required>
+        </div>
+      </fieldset>
       </form>
     </div>
   </section>
