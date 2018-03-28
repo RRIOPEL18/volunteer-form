@@ -65,19 +65,19 @@
         </fieldset>
 
         <fieldset>
-          <legend>Address</legend>
+          <legend class="push">Address</legend>
 
-          <div>
+          <div class="push">
             <label for="address">Street address</label>
             <input id="address" name="address" required>
           </div>
 
-          <div>
+          <div class="push">
           <label for="city">City</label>
           <input id="city" name="city" required>
         </div>
 
-        <div>
+        <div class="push">
           <label for="province">Province</label>
           <input id="province" list="province-list" required>
           <datalist id="province-list">
@@ -96,10 +96,82 @@
           </datalist>
         </div>
 
-        <div>
+        <div class="push">
           <label for="postal code">Postal code</label>
           <input id="postal code" name="postal code" required>
         </div>
+      </fieldset>
+
+      <fieldset>
+
+        <div class="push">
+          <legend>What activities are you interested in helping with?</legend>
+          <div class="push">
+ <input type="radio" id="digging" name="digging">
+ <label for="digging">Digging holes</label>
+
+ <input type="radio" id="dirty" name="dirty">
+ <label for="dirty">Getting dirty</label>
+
+ <input type="radio" id="lifing" name="lifting">
+ <label for="lifting">Lifting heavy objects</label>
+
+ <input type="radio" id="driving" name="driving">
+ <label for="driving">Driving people</label>
+
+ <input type="radio" id="transporting" name="transporting">
+ <label for="transporting">Transporting trees</label>
+
+ <input type="radio" id="taking" name="taking">
+ <label for="taking">Taking photos</label>
+
+ <input type="radio" id="publishing" name="publishing">
+ <label for="publishing">Online publishing</label>
+
+ <input type="radio" id="managing" name="managing">
+ <label for="managing">Managing people</label>
+
+        </div>
+
+        <legend>Do you have any experience with the following?</legend>
+        <div class="push">
+<input type="radio" id="shovels" name="shovels">
+<label for="shovels">Shovels</label>
+
+<input type="radio" id="gps" name="gps">
+<label for="gps">Hand-held GPS</label>
+
+<input type="radio" id="writing" name="writing">
+<label for="writing">Writing & blogging</label>
+
+<input type="radio" id="photography" name="photography">
+<label for="photography">Photography</label>
+
+<input type="radio" id="trail" name="trail">
+<label for="trail">Trail & hill climbing</label>
+
+<input type="radio" id="bush" name="bush">
+<label for="bush">Bush craft</label>
+
+<input type="radio" id="atv" name="atv">
+<label for="atv">ATVs</label>
+
+<input type="radio" id="identification" name="identification">
+<label for="identification">Plant identification</label>
+
+<input type="radio" id="special" name="special">
+<label for="special">Special event planning</label>
+
+<input type="radio" id="speaking" name="speaking">
+<label for="speaking">Speaking to groups</label>
+
+
+
+
+      </div>
+      </div>
+
+
       </fieldset>
       </form>
     </div>
