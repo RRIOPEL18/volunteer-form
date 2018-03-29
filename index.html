@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
-  <meta charset="utf-8">
-  <title>Volunteer Sign-up</title>
+    <title>Volunteer Sign-up</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
 <body>
+  <header>
+  <h1>Apply to be a tree planter</h1>
+  <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+</header>
 
   <section>
-    <div>
-      <div>
-        <h1>Apply to be a tree planter</h1>
-        <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
-      </div>
-
       <form method="POST" action="https://formspree.io/riop0063@algonquinlive.com">
         <fieldset>
           <legend>Personal details</legend>
+          <div class="grid">
           <div>
             <label for="name">Full name</label>
             <input id="othername" name="name" required>
@@ -42,16 +42,16 @@
             <label for="search">T-shirt size</label>
             <select id="search" name="search">
               <option value="empty">Select a t shirt size</option>
-              <option>Fitted: XS</option>
-              <option>Fitted: S</option>
-              <option>Fitted: M</option>
-              <option>Fitted: L</option>
-              <option>Fitted: XL</option>
-              <option>Straight-cut: XS</option>
-              <option>Straight-cut: S</option>
-              <option>Straight-cut: M</option>
-              <option>Straight-cut: L</option>
-              <option>Straight-cut: XL</option>
+              <option value="Fitted: XS">Fitted: XS</option>
+              <option value="Fitted: S">Fitted: S</option>
+              <option value="Fitted: M">Fitted: M</option>
+              <option value="Fitted: L">Fitted: L</option>
+              <option value="Fitted: XL">Fitted: XL</option>
+              <option value="Straight-cut: XS">Straight-cut: XS</option>
+              <option value="Straight-cut: S">Straight-cut: S</option>
+              <option value="Straight-cut: M">Straight-cut: M</option>
+              <option value="Straight-cut: L">Straight-cut: L</option>
+              <option value="Straight-cut: XL">Straight-cut: XL</option>
             </select>
           </div>
 
@@ -64,11 +64,12 @@
             <label for="tel">Phone number (optional)</label>
             <input id="tel" type="tel" name="tel" required>
           </div>
+        </div>
         </fieldset>
 
         <fieldset>
           <legend class="push">Address</legend>
-
+<div class="grid">
           <div class="push">
             <label for="address">Street address</label>
             <input id="address" name="address" required>
@@ -102,11 +103,12 @@
             <label for="text">Postal code</label>
             <input id="text" type="text" name="text" required>
           </div>
+        </div>
         </fieldset>
 
         <fieldset>
-
           <legend>What activities are you interested in helping with?</legend>
+          <div class="grid">
           <div class="push">
             <input type="checkbox" id="digging" name="digging">
             <label for="digging">Digging holes</label>
@@ -191,6 +193,7 @@
             <input type="checkbox" id="no2" name="no">
             <label for="no">No</label>
           </div>
+        </div>
         </fieldset>
 
         <fieldset>
@@ -204,8 +207,7 @@
           <button class="btn btn-light mega" type="submit">Apply</button>
         </div>
       </form>
-    </div>
-    </section>
+  </section>
 
-  </body>
-  </html>
+</body>
+</html>
