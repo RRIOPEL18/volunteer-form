@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
+  <meta charset="utf-8">
   <title>Volunteer Sign-up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -40,7 +41,7 @@
           <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
             <label for="search">T-shirt size</label>
             <select id="search" name="search">
-              <option value="empty">Select a t shirt size</option>
+              <option value="">Select a t shirt size</option>
               <option value="Fitted: XS">Fitted: XS</option>
               <option value="Fitted: S">Fitted: S</option>
               <option value="Fitted: M">Fitted: M</option>
@@ -83,6 +84,7 @@
             <label for="province">Province</label>
             <input id="province" list="province-list" required>
             <datalist id="province-list">
+              <option value=""></option>
               <option value="British Columbia">British Columbia</option>
               <option value="Alberta">Alberta</option>
               <option value="Saskatchewan">Saskatchewan</option>
@@ -206,6 +208,7 @@
         <button class="btn btn-light mega" type="submit">Apply</button>
       </div>
     </form>
+    <footer>© Tree Hugger International Organization</footer>
   </section>
 
 </body>
